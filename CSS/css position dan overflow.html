@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <style media="screen">
+        .container{
+            width: 50%;
+            height: 200px;
+            overflow: auto;
+            margin-left: :0 auto;
+        }
+        .static{ position: static; border: 2px solid green;}
+        .relative{
+            position: relative;
+            border: 2px solid red;
+            left: 20px; /*jarak dari posisi paling kiri sebesar 20px */
+            bottom: 0; /*jarak dari posisi paling kiri sebesar 0px */
+        }
+        .absolute{ position: absolute; border: 2px solid blue; left: 20px; bottom: 40px;}
+        .fixed{ position: fixed; border: 2px solid black; bottom: 0; right: 0;}
+        .sticky{
+            position: sticky;
+            border: 2px solid yellow;
+            top: 0;
+            left: 20px;
+            background: darkblue;
+            color: white;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <p class="sticky">
+                Ini adalah contoh dari posisi sticky
+            </p>
+            <p class="static">
+                <b>Ini adalah contoh dari position static</b>
+                <br>Bahwa sesungguhnya kemerdekaan itu ialah hak segala bangsa dan 
+                oleh sebab itu, maka penjajahan diatas dunia harus dihapuskan 
+                karena tidak sesuai dengan perikemanusiaan dan perikeadilan.
+            </p>
+            <p class="relative">
+                <b> ini adalah contoh dari position relative</b>
+                <br>Dan perjuangan pergerakan kemerdekaan Indonesia telah sampailah 
+                kepada saat yang berbahagia dengan selamat sentosa mengantarkan 
+                rakyat Indonesia ke depan pintu gerbang kemerdekaan negara 
+                Indonesia, yang merdeka, bersatu, berdaulat, adil dan makmur.
+            </p>
+            <p class="absolute">
+                <b>Ini adalah contoh dari position absolute</b>
+                <br>Atas berkat rahmat Allah Yang Maha Kuasa dan dengan didorongkan 
+                oleh keinginan luhur, supaya berkehidupan kebangsaan yang bebas, 
+                maka rakyat Indonesia menyatakan dengan ini kemerdekaannya.
+            </p>
+            <p class="fixed">
+                Ini merupakan contoh dari position fixed
+            </p>
+        </div>
+    </body>
+</html>
